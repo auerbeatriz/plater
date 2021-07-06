@@ -41,21 +41,14 @@
 			}
 			
 			#formulario {
-				width: 30%;
 				margin-top: -14.6%;
 				text-align: center;
 				background-color: rgba(255, 255, 255, 0.7)
 			}
 			
-			.inpt {
-				font-size: 16px;
-				margin-bottom: 3px;
-				width: 90%;
-				height: 30px;
-			}
-			
-			.cadWothers {
-				border-radius: 10px;
+			#cadWothers {
+				border: 0px;
+				border-radius: 5px;
 				margin-bottom: 3px;
 			}
 		</style>
@@ -71,18 +64,18 @@
 				<h1> Crie uma conta! </h1>
 				
 				<form>
-					<input class="inpt" type="text" name="nomeCompleto" placeholder="Nome completo"> </input> </br>
-					<input class="inpt"  type="text" name="nomeUsuario" placeholder="Nome de usuário"> </input> </br>
-					<input class="inpt" type="text" name="email" placeholder="Email"> </input> </br>
-					<input class="inpt" type="password" name="senha" placeholder="Senha"> </input> </br>
-					<input class="inpt" type="password" name="confSenha" placeholder="Confirme sua senha"> </input> </br>
+					<input type="text" name="nomeCompleto" placeholder="Nome completo"> </input> </br>
+					<input type="text" name="nomeUsuario" placeholder="Nome de usuário"> </input> </br>
+					<input type="text" name="email" placeholder="Email"> </input> </br>
+					<input type="password" name="senha" placeholder="Senha"> </input> </br>
+					<input type="password" name="confSenha" placeholder="Confirme sua senha"> </input> </br>
 					
-					<input id="btnCadastrar" type="button" value="Criar conta" onclick=""></input> </br>
+					<input type="button" value="Criar conta" onclick=""></input> </br>
 				</form>
 				
 				<p> ou </p>
-				<button class="cadWothers"> Cadastrar com o Google </button> </br>
-				<button class="cadWothers"> Cadastrar com o Facebook </button> </br>
+				<button id="cadWothers"> Cadastrar com o Google </button> </br>
+				<button id="cadWothers"> Cadastrar com o Facebook </button> </br>
 				</br>
 				<p> Já tem uma conta? Faça seu <b>login</b>!</p>
 			</div>
