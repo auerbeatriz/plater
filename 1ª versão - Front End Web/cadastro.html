@@ -11,8 +11,8 @@
 				
 				/*Alterando elementos do background: imagem -> colocá-la para ocupar 100% da tela sem expandir o navegador*/
 				background-image: url('./Imagens/backFoodtrasnp.jpeg');
-				background-size: cover;
 				background-attachment: fixed;
+				background-size: cover;
 			}
 			
 			#cabeçalho {
@@ -70,47 +70,47 @@
 				padding-left: 7px;
 			}
 			
-			.botoes {
-				font-size: 16px;
+			#btnCadastrar {
+				/*Forma*/
 				width: 90%;
 				height: 35px;
-				background-color: #cecdcb;
-				color: #404040;
 				border-radius: 8px;
 				border: none;
+				background-color: #ff752f;
+				color: #fff;
+				font-size: 16px;
+				/*Ações*/
 				cursor:pointer;
 				-webkit-transition-duration: 0.2s; /* Safari */
 				transition-duration: 0.2s;
 			}
-			
-			.botoes:hover {
+
+			/* :hover faz com que esse estilo seja chamado para #btnCadastrar quando o botão for selecionado. Nesse caso, ele inclui a sombra que
+			faz parecer que o botão está "saltando" da tela*/
+			.btnCadastrar:hover {
 				box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 7px 0 rgba(0,0,0,0.19);
 			}
-			
-			#btnCadastrar {
-				background-color: #ff752f;
-				color: #fff;
-			}
-			
-			#btnCadGoogle {
-				margin-bottom: 5px;
-				
-			}	
 		</style>
 		
 		<script language="Javascript">
 			/*Essa função irá validar os dados inseridos no formulário. Portanto:
 				- Se já existe um usuário com o mesmo nome_usuario |
 				- Se o e-mail já está cadastrado                   | !!!! Necessário consulta ao banco de dados -> atualizar posteriormente !!!!
-				- Se as senhas inseridas conferem
+				(ok) Se as senhas inseridas conferem
+				(ok) Se a senha tem pelo menos 6 caracteres
 			*/
 			function validar() {
 				if (infoCadastro.senha.value != infoCadastro.confSenha.value) { 
 					infoCadastro.senha.style.borderColor = 'red';
 					infoCadastro.confSenha.style.borderColor = 'red';
 					
-					document.getElementById("informeErros").innerHTML = "<b>As senhas informadas devem ser iguais.</b>";
+					document.getElementById("informeErros").innerHTML += "<b>As senhas informadas devem ser iguais.</b></br>";
 				}
+				if (infoCadastro.senha.value.length < 6) {
+						infoCadastro.senha.style.borderColor = 'red';
+						document.getElementById("informeErros").innerHTML += "<b>A senha deve possuir ao menos 6 caracteres.</b></br>";
+				}
+				
 			}
 		</script>
 		
@@ -134,13 +134,8 @@
 					<input class="inpt" type="password" name="senha" placeholder="Senha"> </input> </br>
 					<input class="inpt" type="password" name="confSenha" placeholder="Confirme sua senha"> </input> </br>
 					
-					<input class="botoes" id="btnCadastrar" type="button" value="Criar conta" onclick="validar()"></input> </br>
+					<input id="btnCadastrar" type="button" value="Criar conta" onclick="validar()"></input> </br>
 				</form>
-				
-				<p> ou </p>
-				<button class="botoes" id="btnCadGoogle">  Cadastrar com o Google </button> </br>
-				<button class="botoes" id="btnCadFacebook"> Cadastrar com o Facebook </button> </br>
-				</br>
 				<p> Já tem uma conta? Faça seu <b>login</b>!</p>
 			</div>
 		</div>
