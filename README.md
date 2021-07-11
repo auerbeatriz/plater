@@ -1,8 +1,8 @@
 # Plater
 
-**Autores:** Beatriz Auer Mariano e Mateus Maioli Giacomin
-**Contato:** biaauer03@gmail.com, matgiacomin@gmail.com
-**Instituição:** Institudo Federal do Espírito Santo, Campus Serra
+**Autores:** Beatriz Auer Mariano e Mateus Maioli Giacomin </br>
+**Contato:** biaauer03@gmail.com, matgiacomin@gmail.com </br>
+**Instituição:** Institudo Federal do Espírito Santo, Campus Serra </br>
 **Curso:** técnico integrado em informática para internet
 
 Nota: documentação do projeto será inserida em breve nos campos abaixo. Ver arquivos de documentação anexados.
@@ -22,9 +22,9 @@ Nota: documentação do projeto será inserida em breve nos campos abaixo. Ver a
 Nota: usar mesmo estilo de #btnCadastrar (incluindo :hover) de **cadastro.html**
 
 `<p> ou </p>
-<button class="botoes" id="btnCadGoogle">  Login com o Google </button> </br>
-<button class="botoes" id="btnCadFacebook"> Cadastrar com o Facebook </button>
-</br></br>`
+<button class="botoes" id="btnCadGoogle"> Login com o Google </button> </br>
+<button class="botoes" id="btnCadFacebook"> Cadastrar com o Facebook </button> </br>
+</br>`
 
 ## Referência / consulta de códigos
 
