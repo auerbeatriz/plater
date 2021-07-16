@@ -2,137 +2,26 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Plater: Crie sua conta</title>
-		<style type="text/css">
-			body {
-				/*Ajustando o elemento para ocupar 100% da tela do navegador*/
-				width: 100%;
-				height: 100%;
-				margin: 0;
-				
-				/*Alterando elementos do background: imagem -> colocá-la para ocupar 100% da tela sem expandir o navegador*/
-				background-image: url('./Imagens/backFoodtrasnp.jpeg');
-				background-attachment: fixed;
-				background-size: cover;
-			}
-			
-			#cabeçalho {
-				height: 10%;
-			}
-			
-			.logo {
-				float: left;
-			}
-			
-			#nome {
-				font-family: 'Chery Rush Demo';
-				font-size: 40pt;
-				color: #404040;
-				margin-top: 0;
-				margin-left: 5;
-			}
-			
-			#corpo {
-				width: 100%;
-				height: 90%;
-				position: absolute;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				font-family: 'Louis George Café';
-			}
-			
-			#formulario {
-				width: 30%;
-				margin-top: -5%;
-				text-align: center;
-				background-color: rgba(255, 255, 255, 0.8)
-			}
-			
-			#formulario h1 {
-				font-family: 'Luna';
-				margin-bottom: 0;
-			}
-			
-			#informeErros {
-				color: red;
-				text-align: left;
-				margin-bottom: 5px;
-				margin-left: 21px;
-			}
-			
-			.inpt {
-				font-size: 16px;
-				margin-bottom: 8px;
-				width: 90%;
-				height: 35px;
-				border: 1px solid;
-				border-color: #e4e7ea;
-				padding-left: 7px;
-			}
-			
-			#btnCadastrar {
-				/*Forma*/
-				width: 90%;
-				height: 35px;
-				border-radius: 8px;
-				border: none;
-				background-color: #ff752f;
-				color: #fff;
-				font-size: 16px;
-				/*Ações*/
-				cursor:pointer;
-				-webkit-transition-duration: 0.2s; /* Safari */
-				transition-duration: 0.2s;
-			}
-
-			/* :hover faz com que esse estilo seja chamado para #btnCadastrar quando o botão for selecionado. Nesse caso, ele inclui a sombra que
-			faz parecer que o botão está "saltando" da tela*/
-			.btnCadastrar:hover {
-				box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 7px 0 rgba(0,0,0,0.19);
-			}
-		</style>
-		
-		<script language="Javascript">
-			/*Essa função irá validar os dados inseridos no formulário. Portanto:
-				- Se já existe um usuário com o mesmo nome_usuario |
-				- Se o e-mail já está cadastrado                   | !!!! Necessário consulta ao banco de dados -> atualizar posteriormente !!!!
-				(ok) Se as senhas inseridas conferem
-				(ok) Se a senha tem pelo menos 6 caracteres
-			*/
-			function validar() {
-				if (infoCadastro.senha.value != infoCadastro.confSenha.value) { 
-					infoCadastro.senha.style.borderColor = 'red';
-					infoCadastro.confSenha.style.borderColor = 'red';
-					
-					document.getElementById("informeErros").innerHTML += "<b>As senhas informadas devem ser iguais.</b></br>";
-				}
-				if (infoCadastro.senha.value.length < 6) {
-						infoCadastro.senha.style.borderColor = 'red';
-						document.getElementById("informeErros").innerHTML += "<b>A senha deve possuir ao menos 6 caracteres.</b></br>";
-				}
-				
-			}
-		</script>
-		
+		<link href="CSS/layout.css" rel="stylesheet">
+        <script src="JavaScript/cadastro.js"></script>		
 	</head>
-	<body>
-		<div id="cabeçalho">
-			<img class="logo" width="75px" height="63px" src="./Imagens/Logo pote laranja.png" alt="Logo Plater - crie para ir até a página Home"/>
-			<p class="logo" id="nome"> Plater </p>
+	<body id="cadastroBody">
+        <!-- Exibição da imagem do logo e nome "Plater"-->
+		<div id="divLogo">
+			<img id="imgLogo" src="./Imagens/Logo pote laranja.png" alt="Logo Plater - crie para ir até a página Home"/>
+			<label id="nomeLogo"> Plater </label>
 		</div>
-		
-		<div id="corpo">
-			<div id="formulario">
+		<div id="divCorpo">
+            <!-- Exibição do formulário de cadastro-->
+			<div id="divFormulario">
 				<h1> Crie uma conta! </h1>
-				
-				<div id="informeErros"> </div>
-				
-				<form id="infoCadastro">
-					<input class="inpt" type="text" name="nomeCompleto" placeholder="Nome completo"> </input> </br>
-					<input class="inpt"  type="text" name="nomeUsuario" placeholder="Nome de usuário"> </input> </br>
-					<input class="inpt" type="text" name="email" placeholder="Email"> </input> </br>
-					<input class="inpt" type="password" name="senha" placeholder="Senha"> </input> </br>
-					<input class="inpt" type="password" name="confSenha" placeholder="Confirme sua senha"> </input> </br>
+				<div id="divInformeErros"> </div>   <!-- Div para exibição de mensagens de erro de informações de cadastro-->
+				<form id="infoCadastro"> <!-- Campos de cadastro -->
+					<input class="cadInpt" type="text" name="nomeCompleto" placeholder="Nome completo"> </input> </br>
+					<input class="cadInpt"  type="text" name="nomeUsuario" placeholder="Nome de usuário"> </input> </br>
+					<input class="cadInpt" type="text" name="email" placeholder="Email"> </input> </br>
+					<input class="cadInpt" type="password" name="senha" placeholder="Senha"> </input> </br>
+					<input class="cadInpt" type="password" name="confSenha" placeholder="Confirme sua senha"> </input> </br>
 					
 					<input id="btnCadastrar" type="button" value="Criar conta" onclick="validar()"></input> </br>
 				</form>
