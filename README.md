@@ -22,7 +22,7 @@ Por limitação de tempo, o escopo do projeto foi reduzido inicialmente em três
 
 Porém, existem infinitas outras funcionalidades em nossa mente que sonhamos em implementar ainda! Esse projeto está apenas começando, apenas nascendo.
 
-[Clique aqui para ver o arquivo de apresentação do tema.](https://github.com/auerbeatriz/plater/blob/55c0a6a83efa6ba57e09ebf635aa5e05642bce75/Arquivos%20de%20documenta%C3%A7%C3%A3oDefini%C3%A7%C3%A3o%20do%20tema%20-%20Beatriz%20e%20Mateus%20-%20Plater.pdf)
+[Clique aqui para ver o arquivo de apresentação do tema.](https://github.com/auerbeatriz/plater/blob/3d0b43e530574d97b7c020e0b8c9a886dfc91432/Arquivos%20de%20documenta%C3%A7%C3%A3o/Defini%C3%A7%C3%A3o%20do%20tema%20-%20Beatriz%20e%20Mateus%20-%20Plater.pdf)
 
 ## Project Model Canvas (PMC)
 [Você pode conferir o quadro do projeto clicando aqui.](https://github.com/auerbeatriz/plater/blob/55c0a6a83efa6ba57e09ebf635aa5e05642bce75/Arquivos%20de%20documenta%C3%A7%C3%A3o/PMC%20Plater.pdf)
@@ -37,8 +37,9 @@ Plater é um sistema web e um aplicativo móvel que permite aos usuários o comp
 ## Projeto do sistema
 ## Telas do sistema
 
-[Clique aqui para ver o a prototipagem do sistema web.](https://github.com/auerbeatriz/plater/blob/55c0a6a83efa6ba57e09ebf635aa5e05642bce75/Prototipagem%20web/Imagens%20-%20wireframes%20web%20Plater.zip)
-[Clique aqui para ver o a prototipagem do sistema mobile.](https://github.com/auerbeatriz/plater/blob/55c0a6a83efa6ba57e09ebf635aa5e05642bce75/Prototipagem%20m%C3%B3vel/Prototipagem%20m%C3%B3vel%20Plater%20-%20imagens.zip)
+[Clique aqui para fazer o download da prototipagem do sistema web.](https://github.com/auerbeatriz/plater/blob/55c0a6a83efa6ba57e09ebf635aa5e05642bce75/Prototipagem%20web/Imagens%20-%20wireframes%20web%20Plater.zip)
+
+[Clique aqui para fazer o download da prototipagem do sistema mobile.](https://github.com/auerbeatriz/plater/blob/55c0a6a83efa6ba57e09ebf635aa5e05642bce75/Prototipagem%20m%C3%B3vel/Prototipagem%20m%C3%B3vel%20Plater%20-%20imagens.zip)
 
 ## Blocos de código
 
